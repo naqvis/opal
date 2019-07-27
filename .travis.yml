@@ -25,7 +25,7 @@ after_success:
 deploy:
   provider: releases
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  api_key: $GITHUB_TOKEN
   file: "$DEPLOY_FILENAME"
   on:
     tags: true
