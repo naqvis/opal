@@ -1,8 +1,8 @@
-# Opal
+# Opal ![Opal Image](./images/opal.png)
 [![Build Status](https://travis-ci.org/naqvis/opal.svg?branch=master)](https://travis-ci.org/naqvis/opal)
 [![GitHub release](https://img.shields.io/github/release/naqvis/opal.svg)](https://github.com/naqvis/opal/releases)
 
-`Crystal` CLI for working with container registries. CLI is developed using [Crystal Library `containercegistry.cr`](https://naqvis.github.io/containerregistry.cr/)
+`Crystal` CLI for working with container registries. CLI is developed using [Crystal Library `containercegistry.cr`](https://github.com/naqvis/containerregistry.cr/)
 
 ## Installation
 
