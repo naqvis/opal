@@ -1,0 +1,30 @@
+version: 1.0
+shards:
+  callback:
+    github: mosop/callback
+    version: 0.6.3
+
+  cli:
+    github: mosop/cli
+    version: 0.7.0
+
+  containerregistry:
+    github: naqvis/containerregistry.cr
+    commit: 3eaf0b92c09791bdfb924edf38e19eb2ed346332
+
+  cossack:
+    github: naqvis/cossack
+    version: 0.1.5
+
+  crystar:
+    github: naqvis/crystar
+    version: 0.1.0
+
+  optarg:
+    github: mosop/optarg
+    version: 0.5.8
+
+  string_inflection:
+    github: mosop/string_inflection
+    version: 0.2.1
+

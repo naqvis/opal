@@ -1,0 +1,34 @@
+language: crystal
+
+matrix:
+  include:
+    - os: linux
+      env:
+        - DEPLOY_FILENAME=opal_linux.tar.gz
+        - DEPLOY_DIR=bin/linux
+        - DEPLOY_STATIC="--static"
+    - os: osx
+      env:
+        - DEPLOY_FILENAME=opal_macOS.tar.gz
+        - DEPLOY_DIR=bin/darwin
+        - DEPLOY_STATIC=""
+
+install:
+  - bin/ci prepare_build
+
+script:
+  - bin/ci build
+
+after_success:
+- bin/ci deploy
+
+deploy:
+  provider: releases
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  file: "$DEPLOY_FILENAME"
+  on:
+    tags: true
+    all_branches: true
+    repo: naqvis/opal
+

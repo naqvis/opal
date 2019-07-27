@@ -1,0 +1,21 @@
+name: opal
+version: 0.1.0
+description: |
+ CLI for working with container registries.
+ 
+authors:
+  - Ali Naqvi <syed.alinaqvi@gmail.com>
+
+targets:
+  opal:
+    main: src/opal.cr
+
+crystal: 0.29.0
+
+license: MIT
+
+dependencies:
+  containerregistry:
+    github: naqvis/containerregistry.cr
+  cli:
+    github: mosop/cli
